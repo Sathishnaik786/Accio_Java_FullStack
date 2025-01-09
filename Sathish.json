@@ -6,4 +6,6 @@ try {
     });
 } catch (error) {
     setShoppinglist (previousList);
+    console.error('Error updating quantity:', error);
+}
     setError('failed to update quantity',error);
