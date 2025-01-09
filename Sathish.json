@@ -1,0 +1,9 @@
+try {
+    await fetch ('api/shopping-list/${productID}',{
+        method:'PUT',
+        body:JSON.Stringify({quantity:new Quantity})
+        header:{'content-type'}:'application/json'},
+    });
+} catch (error) {
+    setShoppinglist (previousList);
+    setError('failed to update quantity',error);
