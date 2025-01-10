@@ -1,5 +1,4 @@
 import java.text.DateFormatSymbols;
-import java.util.Locale;
 
 public class DateToStringFormat {
     public static String dateToString(int year, int month, int day) {
